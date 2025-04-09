@@ -1,0 +1,14 @@
+E:\learn\lab6Koop\bin\Debug\net8.0\lab6Koop.exe
+E:\learn\lab6Koop\bin\Debug\net8.0\lab6Koop.deps.json
+E:\learn\lab6Koop\bin\Debug\net8.0\lab6Koop.runtimeconfig.json
+E:\learn\lab6Koop\bin\Debug\net8.0\lab6Koop.dll
+E:\learn\lab6Koop\bin\Debug\net8.0\lab6Koop.pdb
+E:\learn\lab6Koop\obj\Debug\net8.0\lab6Koop.GeneratedMSBuildEditorConfig.editorconfig
+E:\learn\lab6Koop\obj\Debug\net8.0\lab6Koop.AssemblyInfoInputs.cache
+E:\learn\lab6Koop\obj\Debug\net8.0\lab6Koop.AssemblyInfo.cs
+E:\learn\lab6Koop\obj\Debug\net8.0\lab6Koop.csproj.CoreCompileInputs.cache
+E:\learn\lab6Koop\obj\Debug\net8.0\lab6Koop.dll
+E:\learn\lab6Koop\obj\Debug\net8.0\refint\lab6Koop.dll
+E:\learn\lab6Koop\obj\Debug\net8.0\lab6Koop.pdb
+E:\learn\lab6Koop\obj\Debug\net8.0\lab6Koop.genruntimeconfig.cache
+E:\learn\lab6Koop\obj\Debug\net8.0\ref\lab6Koop.dll

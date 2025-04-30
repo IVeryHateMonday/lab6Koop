@@ -9,7 +9,23 @@ namespace lab6Koop
 {
     internal class MOZ
     {
+        private static MOZ _instance;
 
+         private MOZ() { }
+
+        public static MOZ Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new MOZ();
+                }
+                return _instance;
+            }
+        }
+
+        
         public string FormVaccinationPlan(string plan)
         {
             Console.WriteLine("План зформовано");

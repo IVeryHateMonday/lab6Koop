@@ -1,26 +1,42 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace lab6Koop
 {
-    internal class Vaccine
+    internal class VaccinationFacade
     {
-        private string name= String.Empty;
-        private string serialNumber = String.Empty;
-        private string term = String.Empty;
-        public string GetName()
+        private MOZ moz;
+        private Clinic clinic;
+        private Doctor doctor;
+
+        public VaccinationFacade(Clinic clinic, Doctor doctor)
         {
-            return this.name;
-        }
-        public Vaccine(string name, string serialNumber, string term) 
-        {
-            this.name = name;
-            this.serialNumber = serialNumber;
-            this.term = term;
+            this.moz = MOZ.Instance;
+            this.clinic = clinic;
+            this.doctor = doctor;
         }
 
+        public void ExecuteVaccination(Patient patient, Vaccine vaccine)
+        {
+            Console.WriteLine("=== Початок вакцинації ===");
+            
+            // МОЗ доставляє вакцину
+            moz.DeliveryVaccie(clinic, vaccine);
+
+            // Пацієнт запитує вакцину
+            patient.requestVaccine(vaccine.GetName());
+
+            // Лікар отримує вакцину
+            doctor.GetVaccine(vaccine);
+
+            // Лікар вакцинує пацієнта
+            string result = doctor.doVaccination(patient, vaccine);
+            Console.WriteLine(result);
+
+            // Пацієнт отримує вакцину
+            patient.getVaccine();
+
+            // МОЗ аналізує звіт
+            moz.AnalyzReport(clinic.GetReport());
+
+            Console.WriteLine("=== Вакцинація завершена ===");
+        }
     }
 }
